@@ -15,8 +15,8 @@ batch_size = 2056
 full_data_file = "../Data/Cleaned/Full.csv"
 full_checkpoint_dir = "../Data/Results/Checkpoints/PC100/Full/"
 
-training_data_files = ["../Data/Cleaned2/"+str(x)+"_train.csv" for x in range(10)]
-training_checkpoint_dirs = ["../Data/Results/Checkpoints2/Gauss/"+str(x) for x in range(10)]
+training_data_files = ["../Data/Cleaned/"+str(x)+"_train.csv" for x in range(10)]
+training_checkpoint_dirs = ["../Data/Results/Checkpoints/Gauss/"+str(x) for x in range(10)]
 
 def main():
     #train(full_data_file, full_checkpoint_dir)

@@ -10,13 +10,13 @@ tfb = tfp.bijectors
 
 from bijectors import ConditionalTranslation, ConditionalCayleyRotation, ConditionalAffineCoupling, RandomRotation, CayleyRotation, ConditionalScaleDiag
 
-n_epochs = 10
-batch_size = 16
-lr = 1e-4
+n_epochs = 5
+batch_size = 128
+lr = 1e-3
 
-training_data_files = ["../Data/FB/Cleaned_100/"+str(x)+"_train.pkl" for x in range(5)]
-testing_data_files = ["../Data/FB/Cleaned_100/"+str(x)+"_test.pkl" for x in range(5)]
-checkpoint_parent_dir = "D:/OOD/Checkpoints/Manifold/100/"
+training_data_files = ["../Data/FB/Cleaned_1k/"+str(x)+"_train.pkl" for x in range(5)]
+testing_data_files = ["../Data/FB/Cleaned_1k/"+str(x)+"_test.pkl" for x in range(5)]
+checkpoint_parent_dir = "D:/OOD/Checkpoints/Manifold/1k/"
 
 
 def main():
